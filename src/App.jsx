@@ -20,7 +20,7 @@ class App extends React.Component{
   randomQuote(){
     do {
       var color = RandomColor();
-    } while (color == this.state.color);
+    } while (color === this.state.color);
 
     let number = Math.floor(Math.random()*quotes.length)
     

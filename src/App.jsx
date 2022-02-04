@@ -37,9 +37,9 @@ class App extends React.Component{
 
   render() {
     return (
-      <div className="App" style={{backgroundColor: this.state.color, transition: "1s"}}>
+      <div className="App" style={{backgroundColor: this.state.color, transition: "background-color 1s"}}>
         <QuoteBox quote={this.state.quote} author={this.state.author} color={this.state.color} randomQuote={this.randomQuote}/>
-        <a href="https://github.com/jero237" id='github' target="_blank"><i class="fab fa-github"></i> jero237</a>
+        <a href="https://github.com/jero237" id='github' target="_blank">Made with React.js<br /><i class="fab fa-github"></i> jero237</a>
       </div>
     );
   }

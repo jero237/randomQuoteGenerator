@@ -14,7 +14,14 @@
     border-radius: 5px;
     width: 40%;
     margin: .5rem;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
 }
+
+@keyframes fadeIn {
+    to {opacity: 1}
+}
+
 
 h1 {
     font-weight: 300;
@@ -24,11 +31,29 @@ h1 {
 
 #author {
     align-self: flex-end;
+    opacity: 0;
+    animation: fadeIn 2s 3s forwards;
+}
+
+
+.fa-quote-left {
+    position: relative;
+    left: 50%;
+    top: 90%;
+    transform: scale(1.5);
+    animation: quoteIcon 2s 2s forwards;
+}
+
+
+@keyframes quoteIcon {
+    to{transform: scale(1); left: 0%; top: 0%;}
 }
 
 #buttons {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
 }
 
 .button {
@@ -38,15 +63,33 @@ h1 {
     color: white;
     font-weight: 700;
     transition: transform .2s;
+    
 }
 
 .button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    transition: all 2s;
 }
 
 #github {
     color: white;
     text-decoration: none;
+    animation-name: appStart;
+    animation-duration: 3s;
+    opacity: 0;
+    animation: fadeIn 2s 5s forwards;
+    transition: all .2s;
+    text-align: center;
+
+}
+
+#github:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    #quote-box {
+        width: 60%;
+    }
 }

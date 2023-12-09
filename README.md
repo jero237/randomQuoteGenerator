@@ -1,3 +1,6 @@
+## About
+This was one of my first react projects when I was learning at freeCodeCamp.
+
 ## Deployment
 
 https://random-quote-generator-jero237.netlify.app/
